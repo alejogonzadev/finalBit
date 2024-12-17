@@ -1,0 +1,30 @@
+
+
+<div class="body">
+    <app-header></app-header>
+    <br>
+    <h2 class="welcome">NAZARIO</h2>
+
+    <h6 class="highlight">Nuestra selección de vehículos, bienvenido!</h6>
+
+    <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let item of datos">
+                <div class=" col-12 col-sm col-md-6  itemproducto" *ngIf="item.cantidad > 0">
+                    <img src="{{peticion.urlHost}}/Productos/{{item._id}}.png" routerLink="/detallado/{{item._id}}">
+                    <div class="lblnombre">{{item.nombre}}</div>
+                    <div class="titulo">Precio</div>
+                    <div class="lblprecio">{{item.precio |currency}}</div>
+                    
+                    <a   href="https://wa.me/+573045817705?text=Me interesa comprar uno de sus vehiculos, el {{item.nombre}}" target="_blank" class="btn btn-primary button" role="button">Contactar Asesor</a>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+    
+</div>
+
+
+
+<app-footer></app-footer>

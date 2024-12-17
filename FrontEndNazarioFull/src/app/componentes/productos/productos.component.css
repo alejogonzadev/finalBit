@@ -1,0 +1,37 @@
+
+label#prueba {
+    display: block;
+    margin: 0 auto;
+}
+
+.boton {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+div#miimagenproducto {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+
+div#miimagenproducto img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    
+    
+}
+
+
+img.imagenproducto{
+    width: 60px ;
+    height: 50px;
+}

@@ -1,0 +1,138 @@
+<app-menulateral></app-menulateral>
+<div id="ventana">
+
+    <div *ngIf="rol == 'Administrador'">
+        <div class="titulo">
+            <h2>Reporte de clientes y Ventas Mensuales</h2>
+        </div>
+
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Venta #</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Vehiculo</th>
+                <th scope="col">Valor Venta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Alejandro</td>
+                <td>Gonzalez</td>
+                <td>Merceled GLE450</td>
+                <td>$450.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>David</td>
+                <td>Taborda</td>
+                <td>BMX X6</td>
+                <td>$250.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Santiago</td>
+                <td>Ruiz</td>
+                <td>Toyota TXL</td>
+                <td>$350.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Jose</td>
+                <td>Londoño</td>
+                <td>Aston Martin Vantage</td>
+                <td>$500.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Sofia</td>
+                <td>Arbelaez</td>
+                <td>Mazda CX-90</td>
+                <td>$180.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Santiago</td>
+                <td>Rodriguez</td>
+                <td>Volvo CX-60</td>
+                <td>$210.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>John</td>
+                <td>Gomez</td>
+                <td>Porshe 911</td>
+                <td>$750.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Cesar</td>
+                <td>Benitez</td>
+                <td>Toyota 4Runner</td>
+                <td>$150.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Valentina</td>
+                <td>Echavarria</td>
+                <td>Audi Q8</td>
+                <td>$200.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Hernando</td>
+                <td>Mejía</td>
+                <td>Audi R6</td>
+                <td>$170.000.000</td>
+              </tr>
+            </tbody>
+          </table>
+
+        <div class="row">
+            <div>
+                <div class=" col-12 col-sm-12 col-md-4 grafico">
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="opciones">
+
+        <div *ngIf="rol == 'Cliente'">
+            <form class="form-cliente">
+                <h4>Bienvenido a tu zona privada!</h4>
+                <p>Aqui podrás verificar tus datos y actualizarlos.</p>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nombre</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Apellido</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Teléfono de Contacto</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirmar Nueva Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+              </form>
+        </div>
+    </div>
+
+
+</div>

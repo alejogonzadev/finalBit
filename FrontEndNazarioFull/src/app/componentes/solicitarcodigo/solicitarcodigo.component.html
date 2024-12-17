@@ -1,0 +1,60 @@
+
+<body> 
+
+    <app-header></app-header>
+    <br>
+  
+    <div>
+      <br>
+      <div>
+        <h2 class="welcome">NAZARIO</h2>     
+      </div>
+      <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                           
+                    <!-------------      image     ------------->
+                    
+                    <img src="/assets/imgs/logonazario.png" alt="Logo Nazario">
+                    <div class="text">
+                        <p>Los mejores carros, aquí.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 right">
+                    
+                    <div class="input-box">
+                       
+                       <header>Recupera tu contraseña</header>
+                       <div class="input-field">
+                            <input type="text" class="input" id="email" [(ngModel)]="email">
+                            <label for="email">Email</label> 
+                        </div> 
+
+                        <div class="lblsolicitar" routerLink="/recuperarpass">Ya tengo un código</div>
+
+                       <div class="input-field">
+                            
+                            <input type="submit" class="submit" (click)="solicitar()" value="Solicitar Código">
+                       </div> 
+                       <div class="signin">
+                        <span>Lo mejor de nosotros a un click</span>
+                       </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+    <app-footer></app-footer>  
+  </body>
+  
+  
+  
+  
+  
+  
+  
+  

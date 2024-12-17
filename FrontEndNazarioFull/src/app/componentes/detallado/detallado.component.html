@@ -1,0 +1,29 @@
+<app-header></app-header>   
+
+
+<div class="general">
+    
+    <h2 class="welcome">NAZARIO</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm col-md-6">
+                <img src="{{peticion.urlHost}}/Productos/{{datos._id}}.png" class="w-100">
+            </div>
+    
+            <div class="col-12 col-sm col-md-6 contenedor">
+                <h2 class="nombre">{{datos.nombre}}</h2>
+                <p class="descripcion">{{datos.descripcion}}</p>
+                <div class="titulo">Precio</div>
+                <div class="precio">{{datos.precio |currency}}</div>
+                <a  href="https://wa.me/+573045817705?text=Me interesa comprar el vehiculo {{datos.nombre}}" target="_blank" class="btn btn-primary" role="button">Contactar Asesor</a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<app-footer></app-footer>

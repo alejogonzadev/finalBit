@@ -1,0 +1,37 @@
+<div id="zonasuperior">
+    <div id="ultimologueo">Ultimo inicio de sesion:{{ultimologin | date: 'dd/MM/yyyy  HH:mm:ss'}}</div>
+</div>
+    
+<div id="zonalateral">
+    <div id="logoempresa">
+        <img src="assets/imgs/logonazario.png" alt="Logo Nazario">
+    </div>
+
+    
+
+    <div id="datosusuario">
+        <label for="subiravatar" id="subiravatares">
+            <img src="{{peticion.urlHost}}/Avatar/{{_id}}.png?x='{{random}}" alt="avatarusuario">
+        </label>
+
+        <input type="file" id="subiravatar" style="display: none;" (change)="OpenFileSelected($event)">
+        <!-- <button class=" btn btn-primary boton" (click)="onUpload()"> Upload </button> -->
+
+        
+
+
+      
+
+        <div class="nombreusuario">{{nombre}}</div>
+        <div class="rol">{{rol}}</div>
+    </div>
+
+    <div id="opciones">
+        <div class="itemmenu" routerLink="/dashboard">Dashboard</div>
+        <div  class="itemmenu" routerLink="/home">Home</div>
+        <div *ngIf="rol == 'Administrador'" class="itemmenu" routerLink="/usuarios">Usuarios</div>
+        <div *ngIf="rol == 'Administrador'" class="itemmenu" routerLink="/productos">Vehiculos</div>
+        <!-- <div *ngIf="rol == 'Administrador'" class="itemmenu" routerLink="/servicios" >Servicios</div> -->
+        <div class="itemmenu" (click)="Logout()">Log Out</div>
+    </div>
+</div>

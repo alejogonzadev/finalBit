@@ -1,0 +1,65 @@
+
+<body> 
+
+  <app-header></app-header>
+  <br>
+
+  <div>
+    <br>
+    <div>
+      <h2 class="welcome">NAZARIO</h2>     
+    </div>
+    <div class="wrapper">
+      <div class="container main">
+          <div class="row">
+              <div class="col-md-6 side-image">
+                         
+                  <!-------------      image     ------------->
+                  
+                  <img src="/assets/imgs/logonazario.png" alt="Logo Nazario">
+                  <div class="text">
+                      <p>Los mejores carros, aquí.</p>
+                  </div>
+                  
+              </div>
+              <div class="col-md-6 right">
+                  
+                  <div class="input-box">
+                     
+                     <header>Inicia Sesión</header>
+                     <div class="input-field">
+                          <input type="text" class="input" id="email" autocomplete="on" [(ngModel)]="email">
+                          <label for="email">Email</label> 
+                      </div> 
+                     <div class="input-field">
+                          <input type="password" class="input" id="password" [(ngModel)]="password">
+                          <label for="password">Password</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="recordar" [(ngModel)]="recordar">
+                        <label class="form-check-label remember" for="recordar">Recordarme</label>
+                      </div>
+                      <div class="lblsolicitar" routerLink="/solicitarcodigo">¿Olvidaste tu contraseña?</div>
+                     <div class="input-field">
+                          
+                          <input type="submit" class="submit" (click)="login()" value="Log In">
+                     </div> 
+                     <div class="signin">
+                      <span>Lo mejor de nosotros a un click</span>
+                     </div>
+                  </div>  
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <app-footer></app-footer>  
+</body>
+
+
+
+
+
+
+

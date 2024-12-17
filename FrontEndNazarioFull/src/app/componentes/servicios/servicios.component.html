@@ -1,0 +1,58 @@
+<app-menulateral></app-menulateral>
+<div id="ventana">
+    <div class="lbltitulo">
+        Modulo Servicios
+        <div id="adddata">
+            <i class="fa-solid fa-plus" (click)="Nuevo()"></i>
+        </div>
+    </div>
+
+    <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>            
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>       
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let item of datos">
+            <tr (click)="EditarId(item._id)">        
+              <td>{{item.codigo}}</td>
+              <td>{{item.nombre}}</td>            
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="formdatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Datos Vehículo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <div class="form-group">
+            <label for="codigo">Codigo</label>
+            <input type="text" class="form-control" id="codigo" [(ngModel)]="codigo">
+          </div>
+      
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre">
+          </div>
+       
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="Guardar()" *ngIf="IdSeleccionado == '' ">Guardar</button>
+        <button type="button" class="btn btn-primary" (click)="Actualizar()" *ngIf="IdSeleccionado != '' ">Actualizar</button>
+        <button type="button" class="btn btn-danger" (click)="Eliminar()" *ngIf="IdSeleccionado != '' ">Eliminar</button>
+      </div> 
+  </div>
+</div>

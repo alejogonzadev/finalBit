@@ -1,0 +1,61 @@
+<body>
+    <app-header></app-header>
+    <br>
+  
+    <div>
+      <br>
+      <div>
+        <h2 class="welcome">NAZARIO</h2>     
+      </div>
+      <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                           
+                    <!-------------      image     ------------->
+                    
+                    <img src="/assets/imgs/logonazario.png" alt="">
+                    <div class="text">
+                        <p>El carro de tus sueños, te espera.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 right">
+                    
+                    <div class="input-box">
+                       
+                       <header>Regístrate</header>
+                       <div class="input-field">
+                            <input type="text" class="input" id="nombre" autocomplete="off" [(ngModel)]="nombre">
+                            <label for="nombre">Name</label> 
+                        </div> 
+                       <div class="input-field">
+                            <input type="text" class="input" id="apellido" autocomplete="off" [(ngModel)]="apellido">
+                            <label for="apellido">Last Name</label>
+                        </div> 
+                        <div class="input-field">
+                            <input type="email" class="input" id="email" autocomplete="off" [(ngModel)]="email">
+                            <label for="email">Email</label>
+                        </div> 
+                        <div class="input-field">
+                            <input type="password" class="input" id="password" [(ngModel)]="password">
+                            <label for="password">Password</label>
+                        </div> 
+                       <div class="input-field">
+                            
+                            <input type="submit" class="submit" (click)="Registrar()" value="Sign Up">
+                       </div> 
+                       <div class="signin">
+                        <span>No te pierdas de nada.</span>
+                       </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>   
+  </body>
+
+

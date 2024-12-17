@@ -1,0 +1,89 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+
+.title-footer{
+    text-decoration: none;
+    font-family: 'Cinzel';
+    color: #723f14;
+    text-decoration: none;
+}
+
+
+
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 120 px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #ffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Cinzel';
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social .logo  {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-left: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social .logo:hover {
+    color:#723f14 ;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+    }
+
+}

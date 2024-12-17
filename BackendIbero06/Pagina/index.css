@@ -1,0 +1,10 @@
+div#registrar {
+    width: 365px;
+    border: solid 1px;
+    padding: 26px;
+    border-radius: 16px;
+    background: #8BC34A;
+    margin-left: calc(50% - 180px);
+    margin-top: 45px;
+    color: white;
+}

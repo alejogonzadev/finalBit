@@ -1,0 +1,96 @@
+div#zonasuperior {
+    width: 100%;
+    background-color:black;
+    height: 40px;
+}
+
+div#ultimologueo {
+    color:white;
+    text-align: right;
+    margin-right: 15px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+
+div#zonalateral {
+    background: black;
+    width: 200px;
+    height: calc(100vh) ;
+    position: absolute;
+    top: 40px;
+    
+}
+
+div#logoempresa img {
+    width: 100%;
+}
+
+div#logoempresa {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+label#subiravatares {
+    display: block;
+    margin: 0 auto;
+}
+
+
+div#datosusuario img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 3px;
+    margin-right: 8px;
+    margin-top: 4px;
+    border-radius: 50%
+}
+
+div#datosusuario {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.nombreusuario {
+    color: white;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+.rol {
+    color: white;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+div#opciones {
+    color: white;
+    padding-left: 15px;
+    margin-top: 30px;
+
+}
+
+.itemmenu {
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.itemmenu:hover {
+    color:brown;
+    background:black;
+    border-radius: 10px;
+    width: 90%;
+    /* padding-left: 10px; */
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    border: 2px solid white;
+    
+}
